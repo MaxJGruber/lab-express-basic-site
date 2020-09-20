@@ -16,7 +16,7 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/works", (req, res) => {
-  res.render("works");
+  res.render("works", { css: ["styles"] });
 });
 
 app.get("/photo-gallery", (req, res) => {

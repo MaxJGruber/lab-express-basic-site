@@ -97,6 +97,28 @@ h3.part-title {
   text-align: center;
 }
 
+/* WORKS  */
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.works-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: dimgray;
+}
+#filmography,
+#discography {
+  text-align: center;
+  padding: 2%;
+  color: antiquewhite;
+}
+
 /* PHOTO GALLERY  */
 
 .list.grid {
@@ -118,6 +140,6 @@ h3.part-title {
 }
 
 .gallery-pic {
-  height: 90%;
+  height: 85%;
   width: auto;
 }
