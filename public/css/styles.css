@@ -44,16 +44,55 @@ ol {
 /* HEADER  */
 
 #photo-background {
-  background: url(./imgs/CG1.jpg);
-  /* background-position: center; */
+  background: url(../imgs/CG1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-header {
   height: 600px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .title-container {
-  margin: 15px 15px 0 150px;
+  padding: 15%;
+}
+
+.home-title {
+  color: whitesmoke;
+}
+
+h1.home-title {
+  font-size: 3em;
+}
+
+h3.home-title {
+  font-size: 1.5em;
+}
+
+/* ABOUT  */
+
+.about {
+  background-color: darkgray;
+}
+
+.part-container {
+  margin: 2%;
+  box-shadow: 1.2px 0.6px 1.5px darkblue;
+  border-radius: 0.3rem;
+  padding: 1%;
+  background-color: black;
+  color: antiquewhite;
+}
+
+p {
+  margin: 5px;
+}
+
+.about-sub-title {
+  font-size: 2em;
+  padding-top: 2%;
+  text-align: center;
+}
+
+h3.part-title {
+  text-align: center;
 }
