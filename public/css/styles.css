@@ -96,3 +96,28 @@ p {
 h3.part-title {
   text-align: center;
 }
+
+/* PHOTO GALLERY  */
+
+.list.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 10%;
+  grid-gap: 5px;
+  background-color: #0d355a;
+}
+
+.list.grid .item {
+  box-shadow: 1.2px 0.6px 1.5px darkgoldenrod;
+  border-radius: 0.3rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: darkslategray;
+}
+
+.gallery-pic {
+  height: 90%;
+  width: auto;
+}

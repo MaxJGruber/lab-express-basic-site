@@ -6,7 +6,6 @@ app.use(express.static(__dirname + "/public"));
 app.set("view engine", "hbs");
 app.set("views", __dirname + "/views");
 hbs.registerPartials(__dirname + "/views/partials");
-request.open("GET", OMDbAPI, true);
 
 app.get("/", (req, res) => {
   res.render("home", { css: ["styles"] });
@@ -21,7 +20,20 @@ app.get("/works", (req, res) => {
 });
 
 app.get("/photo-gallery", (req, res) => {
-  res.render("photo-gallery");
+  res.render("gallery", {
+    imgs: [
+      "DG1.jpg",
+      "DG2.jpg",
+      "DG3.jpg",
+      "DG4.jpg",
+      "DG5.jpg",
+      "DG6.jpg",
+      "DG7.jpg",
+      "DG8.jpg",
+      "DG9.jpg",
+    ],
+    css: ["styles"],
+  });
 });
 
 app.listen(8888, () => {
